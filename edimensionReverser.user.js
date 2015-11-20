@@ -11,18 +11,24 @@
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
- 
+
+ //THESE ARE THE COURSES YOU WANT TO HIGHLIGHT
+//********************************************
 var highlightCourses = [
 	"optimization",
 	"machine",
 	"database",
 	"the mind",
 ];
+//********************************************
 
+//THESE ARE THE COURSES YOU WANT TO END UP AT THE BOTTOM
+//********************************************
 var ignore =[
 	"survey",
 	"capstone"
 ];
+//********************************************
 
 highlightCourses = highlightCourses.map(function(obj){
 	return obj.toLowerCase();
