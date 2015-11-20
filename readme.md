@@ -25,3 +25,14 @@ var highlightCourses = [
 ];
 //********************************************
 ```
+
+###Requires
+
+- [Greasemonkey](https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/) for Firefox 
+- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) for Chrome
+
+###Download
+Hosted on [Github User Pages](http://glencbz.github.io/Assets/edimensionReverser.user.js)
+
+###Tested on:
+- Chrome
