@@ -1,5 +1,6 @@
 ###It reverses the course list 
 
+(also makes the boxes clickable)
 ###Ignoring
 You can edit the script to put some courses at the bottom. Enter the search term in apostrophes like below
 ```
