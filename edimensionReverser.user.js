@@ -34,7 +34,7 @@ highlightCourses = highlightCourses.map(function(obj){
 });
 var $ = window.jQuery;
 var styles = ["<style>.highlighted{background-color: #E8F6FF; border: 2px solid #C9DFFF; border-radius: 4px;}</style>"];
-styles.push("<style>.unlist > li{cursor: pointer;}</style>");
+styles.push("<style>.overlay{position: absolute; width: 100%; height: 100%; top: 0; left: 0;}</style>")
 
 $("body").append(styles);
 
@@ -43,13 +43,14 @@ courseList.children().each(function(i, li){
 	var $li = $(li);
 	var titleLower = $li.find(".name>a").text().toLowerCase();
 	var anchorHref = $li.find("a").attr("href");
-	$li.click(function(){
-		location.href = anchorHref;
-	});
+	var $coursebox = $li.children(".coursebox");
+	
+	$li.css("position", "relative");
+	$coursebox.append("<a href='" + anchorHref + "' class='overlay'></a>");
 
 	for (var i = 0; i < highlightCourses.length; i++){
 		if (titleLower.indexOf(highlightCourses[i]) > -1){
-			$li.children(".coursebox").addClass("highlighted");
+			$coursebox.addClass("highlighted");
 			break;
 		}
 	}
