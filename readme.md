@@ -13,7 +13,7 @@ var ignore =[
 //********************************************
 ```
 
-###Ignoring
+###Highlighting
 Works just like ignoring, except that it highlights the courses you want in a somewhat pleasing shade of blue.
 ```
 //THESE ARE THE COURSES YOU WANT TO HIGHLIGHT
